@@ -1,6 +1,6 @@
 # Dockerfile to build tiddlywiki.js
 FROM node:alpine
-LABEL PCFreak
+LABEL PCFreak pcfreak
 COPY ./start.sh /bin/start.sh
 WORKDIR /opt/tiddlywiki
 RUN apk update && apk add jq && npm install tiddlywiki && \
