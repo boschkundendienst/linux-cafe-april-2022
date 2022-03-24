@@ -1,0 +1,30 @@
+---
+version: '3'
+# services
+services:
+  tiddlywiki:
+    privileged: false
+#    network: 
+#     - bridge
+#     - nginx-shared
+#     - slirp4netns
+    container_name: tiddlywiki
+    image: tiddlywiki.js
+    restart: always
+    volumes:
+     - ./webroot:/webroot
+    ports:
+     #  <port>:<intport>
+     # make sure intport matches with WIKI_OPTS
+     - 8115:8115
+    environment:
+     PUID: 1000
+     PGID: 1000
+     TZ: 'Europe/Berlin'
+     # make sure port value matches with ports: section
+     # use <url>/login-basic to authenticate
+     # anonymous r authenticated r/w
+     WIKI_OPTS: --listen host=0.0.0.0 port=8115 readers=(anon) writers=pcfreak username=pcfreak password=linux
+     
+     # anonymous r/w
+     #WIKI_OPTS: --listen host=0.0.0.0 port=8115
