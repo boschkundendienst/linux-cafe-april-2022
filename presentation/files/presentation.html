@@ -1,0 +1,1063 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Linux Cafe 04/2022</title>
+
+	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+	<meta name="author" content="Hakim El Hattab">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="libs/reveal.js/4.1.3/reset.css">
+	<link rel="stylesheet" href="libs/reveal.js/4.1.3/reveal.css">
+
+	
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	  <!-- highlight Theme -->
+  	
+	  <link rel="stylesheet" href="libs/highlight.js/11.3.1/styles/monokai.min.css">
+	
+	
+		
+	<link rel="stylesheet" href="libs/reveal.js/4.1.3/plugin/chalkboard/style.css">
+	
+	
+	
+		<link rel="stylesheet" href="libs/reveal.js/4.1.3/plugin/customcontrols/style.css">
+	
+	<link rel="stylesheet" href="libs/styles/tasklist.css">
+
+
+
+  <!-- Revealjs Theme -->
+  
+  	<link rel="stylesheet" href="libs/reveal.js/4.1.3/theme/night.css" id="theme">
+  
+  
+
+
+  <!-- Revealjs Theme -->
+  
+
+ 
+</head>
+
+<body>
+  
+    <div id="logo" style="position: fixed; top: 20px; left: 20px; z-index: 1; height:3rem;">
+        <img src="img/logo.png" style="height:100%"/>
+    </div>
+  
+
+
+  <div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+
+      
+
+
+    
+        <section data-background-image="img/background01.jpg" style="text-align: left;"  data-background-size="960x 700x">
+            
+            <!-- Title Slide -->
+<!-- .slide: data-background-image="img/background01.jpg" style="text-align: left;"  data-background-size="960x 700x" -->
+<h2>TiddlyWiki</h2>
+<h4>Die “eierlegende Wollmilchsau” der Wikis</h4>
+<p>Linux Cafe am 06.04.2022</p>
+<br>
+<p>Diese Präsentation befindet sich im <a href="https://github.com/boschkundendienst/linux-cafe-april-2022">Git-Repo</a> unter <small><code>presentation/files/presentation.html</code></small></p>
+
+            </section>
+    
+
+
+
+    
+        <section style="text-align: right;" data-background-image="img/big-head-small-man.jpg" data-background-size="960x 700x">
+            
+            <!-- .slide: style="text-align: right;" data-background-image="img/big-head-small-man.jpg" data-background-size="960x 700x" -->
+<div align="right"><font color="black">Hatten Sie schon mal das Gefühl,<br>Ihr Gehirn sei nicht groß genug,<br>um sich alles zu merken,<br>was Ihnen wichtig ist?</font></div>
+<div align="right">
+<small><font color="black">
+Willkommen bei TiddlyWiki, dem einzigartigen nicht-linearen<br>
+Web-Notizbuch, das Ihnen hilft Ihre Ideen zu sammeln,<br>
+zu strukturieren und weiterzugeben.</small></div>
+</font>
+            </section>
+    
+
+
+
+    
+        <section style="text-align: left;" data-background-image="img/puzzle-white.png" data-background-size="960x 700x">
+            
+            <!-- .slide: style="text-align: left;" data-background-image="img/puzzle-white.png" data-background-size="960x 700x" -->
+<h2>TidldlyWiki</h2>
+<p>TiddlyWiki besteht aus sogenannten “Tiddlern”. Die Philosophie eines Tiddlers ist es, die Möglichkeiten der Wiederverwendbarkeit zu maximieren.</p>
+<p>Dies wird dadurch erreicht, dass Informationen in gerade so kleine Einheiten “zerlegt” werden, dass sie für sich genommen, noch Sinn machen.</p>
+
+            </section>
+    
+
+
+
+    
+    <section>
+        <section style="text-align: left; font-size: 40px;" data-background-image="img/puzzle-white.png" data-background-size="960x 700x">
+            <!-- .slide: style="text-align: left; font-size: 40px;" data-background-image="img/puzzle-white.png" data-background-size="960x 700x" -->
+<h3>Warum TiddlyWiki?</h3>
+<p><small>Ich habe viele Wikis ausprobiert. Obwohl es sehr gute Ansätze gibt, hat man meist das Problem, dass man einen Server oder Dienst benötigt um das Wiki zu benutzen oder zu betreiben.</p>
+<p>Die Inhalte werden meistens in einer Datenbank gespeichert und sind nur verfügbar wenn mehrere Dienste (z.B. Webserver + Datenbank) funktionieren.</p>
+<p>TiddlyWiki in seiner einfachsten Form besteht nur aus einer einzigen HTML-Datei, d.h. alles was ich benötige ist ein aktueller HTML5-Browser.</p>
+<p>Tiddlywiki ist sehr zukunftssicher. Ein einmal erstelltes TiddlyWiki (eine HTML-Datei) wird auch in einigen Jahren noch von jedem HTML5 Browser darstellbar sein.
+</small></p>
+
+            </section>
+        
+            <section style="text-align: left; font-size: 35px;"  data-background-image="img/puzzle-white.png" data-background-size="960x 700x">
+                <!-- .slide: style="text-align: left; font-size: 35px;"  data-background-image="img/puzzle-white.png" data-background-size="960x 700x" -->
+<h3>Darum TiddlyWiki !</h3>
+<ul>
+<li>von jedem bedienbar</li>
+<li>TiddlyWiki kann leicht an die eigenen Bedürfnisse angepasst werden</li>
+<li>Bilder und andere Dateien werden Base64-kodiert in der HTML-Datei gespeichert</li>
+<li>Export einzelner Tiddler (z.B. zur Weitergabe) möglich</li>
+<li>Upgrades sind nicht nötig aber möglich und sehr einfach.</li>
+<li>Alles in einer Datei aber jederzeit wieder “zerlegbar”</li>
+<li>Import von Bildern und Inhalten per Drag &amp; Drop möglich</li>
+</ul>
+
+            </section>
+        
+            <section style="text-align: left; font-size: 35px;"  data-background-image="img/background05.png" data-background-size="960x 700x">
+                <!-- .slide: style="text-align: left; font-size: 35px;"  data-background-image="img/background05.png" data-background-size="960x 700x" -->
+<h3>Darum erst recht TiddlyWiki !</h3>
+<ul>
+<li>Portabel</li>
+<li>bei Bedarf verschlüsselt (standalone Version)</li>
+<li>leicht zu bedienen</li>
+<li>einfach zu erlernen</li>
+<li>modular und hochgradig anpassbar</li>
+<li>Einfache und erweiterte Suche</li>
+<li>sehr gute Dokumentation</li>
+<li>Unterstützung von Bildern</li>
+<li>funktioniert auch auf Mobilgeräten</li>
+</ul>
+
+            </section>
+        
+            <section style="text-align: left; font-size: 35px;"  data-background-image="img/face001.jpg" data-background-size="960x 700x">
+                <!-- .slide: style="text-align: left; font-size: 35px;"  data-background-image="img/face001.jpg" data-background-size="960x 700x" -->
+<h3>Anwendungsmöglichkeiten</h3>
+<ul>
+<li>Aufgaben-Manager</li>
+<li>Notizblock</li>
+<li>Manager für Teamprotokolle oder Chatlogs</li>
+<li>Persönliches Memo</li>
+<li>Tägliches Journal</li>
+<li>Code-Notizen</li>
+<li>Persönliche Gesundheitsakte</li>
+<li>Dokumentationen</li>
+</ul>
+
+            </section>
+        
+            <section style="text-align: left;" data-background-image="img/platforms.jpg" data-background-size="960x 700x">
+                <!-- .slide: style="text-align: left;" data-background-image="img/platforms.jpg" data-background-size="960x 700x" -->
+<h3>Plattformen</h3>
+<ul>
+<li>TiddlyWiki in einer HTML-Datei</li>
+<li><strong>TiddlyDesktop</strong> zum einfacheren Editieren und zur Verwaltung vieler TiddlyWiki-HTML-Dateien</li>
+<li>TiddlyWiki im Beaker Browser</li>
+<li><strong>TiddlyWiki on Node.js</strong> - die “Server-Version”</li>
+</ul>
+
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+        <section style="text-align: left; font-size: 35px;" data-background-image="img/background02.jpg" data-background-size="960x 700x">
+            
+            <!-- .slide: style="text-align: left; font-size: 35px;" data-background-image="img/background02.jpg" data-background-size="960x 700x"  -->
+<h2>Demo - TiddlyWiki self-contained (1 Datei)</h2>
+<ul>
+<li>
+<p>die “sich-selbst-beinhaltende” Variante von TiddlyWiki besteht aus nur einer HTML-Datei. Sie kann mit jedem aktuellen Browser geöffnet werden.</p>
+</li>
+<li>
+<p>Nachteil beim Öffnen mit dem Browser: Die Datei muss bei Änderungen ständig “überspeichert” werden.</p>
+</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section style="text-align: left; font-size: 35px;" data-background-image="img/background02.jpg" data-background-size="960x 700x">
+            
+            <!-- .slide: style="text-align: left; font-size: 35px;" data-background-image="img/background02.jpg" data-background-size="960x 700x"  -->
+<h2>Demo - TiddlyDesktop</h2>
+<p>Zur einfacheren Verwaltung von lokalen TiddlyWiki-HTML-Dateien empfiehlt sich die Software <strong>TiddlyDesktop</strong>. Sie erspart das ständige Überspeichern der HTML-Datei und legt automatisch Sicherungskopien an.</p>
+<p><a href="https://github.com/Jermolene/TiddlyDesktop">https://github.com/Jermolene/TiddlyDesktop</a></p>
+
+            </section>
+    
+
+
+
+    
+        <section style="text-align: left; font-size: 30px;" data-background-image="img/background02.jpg" data-background-size="960x 700x">
+            
+            <!-- .slide: style="text-align: left; font-size: 30px;" data-background-image="img/background02.jpg" data-background-size="960x 700x" -->
+<h2>Demo - TiddlyWiki on Node.js</h2>
+<ul>
+<li>
+<p>Die “Server-Variante” von TiddlyWiki ist dann sinnvoll, wenn Tiddler einer größeren Menge an Personen zugänglich gemacht werden sollen, z.B. als zentrale Dokumentations-Plattform in einer Firma.</p>
+</li>
+<li>
+<p>Alle können dann auch gleichzeitig neue Tiddler anlegen oder Tiddler bearbeiten. Rechteverwaltung ist möglich</p>
+</li>
+<li>
+<p>Das gleichzeitige Bearbeiten des gleichen Tiddlers ist nicht möglich.</p>
+</li>
+<li>
+<p>Aus der “Server-Variante” kann wieder eine einzelne TiddlyWiki-HTML-Datei (self-contained) erstellt werden und vieles mehr!</p>
+</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section style="text-align: left; font-size: 35px;" data-background-image="img/background02.jpg" data-background-size="960x 700x">
+            
+            <!-- .slide: style="text-align: left; font-size: 35px;" data-background-image="img/background02.jpg" data-background-size="960x 700x" -->
+<h2>Demo - TiddlyWiki mit Beaker Browser</h2>
+<p>Eigentlich für einen ganz anderen Anwendungsfall gebaut ermöglicht es der “Beaker Browser” ebenfalls eine lokale TiddlyWiki-Datei sauber zu managen.</p>
+<p>Zusätzlich hat er das Feature das Wiki dann mit anderen Beaker-Browser-Nutzern zu teilen (wenn gewünscht).</p>
+<p><a href="https://beakerbrowser.com/">https://beakerbrowser.com/</a></p>
+
+            </section>
+    
+
+
+
+    
+        <section style="text-align: left;" data-background-image="img/background06.png" data-background-size="960x 700x">
+            
+            <!-- .slide: style="text-align: left;" data-background-image="img/background06.png" data-background-size="960x 700x" -->
+<h2>Aber jetzt geht’s los!</h2>
+<p>Ich werde nun zeigen, wie ich aus einem leeren TiddlyWiki meine derzeitige Vorlage erstellt habe.</p>
+<p>Bitte beachten, dass das Tiddlywiki ggf. immer überspeichert werden muss, wenn Änderungen durchgeführt wurden.</p>
+
+            </section>
+    
+
+
+
+    
+        <section style="text-align: left;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x">
+            
+            <!-- .slide: style="text-align: left;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x" -->
+<h2>01 TiddlyWiki herunterladen</h2>
+<ul>
+<li><a href="https://tiddlywiki.com/#:GettingStarted%20Community">englische Version herunterladen</a></li>
+<li><a href="https://tiddlywiki.com/languages/de-DE/index.html#ErsteSchritte:ErsteSchritte%20HelloThere">deutsche Version herunterladen</a></li>
+</ul>
+<p>Erstelle nach dem Herunterladen eine Kopie der Datei <code>empty.html</code> und benutze die Kopie für die weiteren Schritte.</p>
+
+            </section>
+    
+
+
+
+    
+        <section style="text-align: left;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x">
+            
+            <!-- .slide: style="text-align: left;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x" -->
+<h2>02 Markdown und HIghlight Plugin</h2>
+<ul>
+<li>Control-Panel → Plugins → Get more plugins → Suchfeld “Markdown”</li>
+<li>Markdown und Highlight Plugin installieren.</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section style="text-align: left; font-size: 30px;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x">
+            
+            <!-- .slide: style="text-align: left; font-size: 30px;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x" -->
+<h2>03 Grundeinstellungen</h2>
+<ul>
+<li>
+<p><b>Sprachen downloaden:</b><br>Control-Panel → Plugins → Get more plugins → Languages → Suchfeld “deutsch” → Paket “de-DE Deutsch (Deutschland)” installieren</p>
+</li>
+<li>
+<p><b>Seitenleiste:</b><br>Control-Panel → Design → Theme Tweaks → Seitenleiste Darstellung → “Variable Story, fixe Seitenleiste” einstellen</p>
+</li>
+<li>
+<p><b>Titel und Untertitel:</b><br>Control-Panel → Info → Basis → Titel und Untertitel usw. einstellen</p>
+</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section style="text-align: left; font-size: 25px;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x">
+            
+            <!-- .slide: style="text-align: left; font-size: 25px;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x" -->
+<h2>04 TiddlyWiki “Tools” konfigurieren</h2>
+<ul>
+<li>Seitenleiste → Tools → z.B. folgende Auswahl:
+<br>
+<img height="500" src="img/tiddlywikitools.png"></li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section style="text-align: left; font-size: 25px;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x">
+            
+            <!-- .slide: style="text-align: left; font-size: 25px;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x" -->
+<h2>05 Der Reiter “Inhalt”</h2>
+<ul>
+<li>neuer Tiddler mit Tag: <span style="tab-size: 4;text-rendering: optimizeLegibility;word-wrap: break-word;display: inline-block;padding: 0.16em 0.7em;font-size: 0.6em;font-weight: normal;line-height: 1.2em;white-space: nowrap;vertical-align: baseline;background-color: #ec6;border-radius: 1em;fill: rgb(51, 51, 51);color: rgb(51, 51, 51);transition: none 0s ease 0s;transform: none;opacity: 1;">$:/tags/SideBar</span></li>
+</ul>
+<pre><code>Titel      : Inhalt
+Neuer Tag: $:/tags/SideBar
+Typ        : -
+Text       :
+
+&lt;!-- unterhalb kopieren --&gt;
+Wiki Content
+&lt;div class=&quot;tc-table-of-contents&quot;&gt;
+&lt;&lt;toc-selective-expandable &quot;Inhalt&quot; &quot;!title[$:/config/NewJournal/Tags]sort[modified]&quot;&gt;&gt;
+&lt;!-- &lt;&lt;toc-selective-expandable &quot;Inhalt&quot; &quot;!title[$:/config/NewJournal/Tags]sort[title]&quot;&gt;&gt; --&gt;
+&lt;/div&gt;
+&lt;!-- oberhalb kopieren --&gt;
+
+zusätzlich: 
+Feld einfügen  : list-before
+Feld Text / Wert: $:/core/ui/SideBar/Open
+</code></pre>
+
+            </section>
+    
+
+
+
+    
+    <section>
+        <section style="text-align: left;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x">
+            <!-- .slide: style="text-align: left;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x" -->
+<h2>06 Der Bereich “Aufgaben” A</h2>
+<ul>
+<li>Tiddler 01 “Aufgaben” mit Tag: <span style="tab-size: 4;text-rendering: optimizeLegibility;word-wrap: break-word;display: inline-block;padding: 0.16em 0.7em;font-size: 0.6em;font-weight: normal;line-height: 1.2em;white-space: nowrap;vertical-align: baseline;background-color: #ec6;border-radius: 1em;fill: rgb(51, 51, 51);color: rgb(51, 51, 51);transition: none 0s ease 0s;transform: none;opacity: 1;">Inhalt</span></li>
+</ul>
+<pre><code>Title       : Aufgaben
+tag name(s) : Inhalt
+Typ         : -
+Text        : -
+</code></pre>
+
+            </section>
+        
+            <section style="text-align: left; font-size: 25px;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x">
+                <!-- .slide: style="text-align: left; font-size: 25px;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x" -->
+<h2>06 Der Bereich “Aufgaben” B</h2>
+<ul>
+<li>Tiddler 02 “ToDo” mit Tag: <span style="tab-size: 4;text-rendering: optimizeLegibility;word-wrap: break-word;display: inline-block;padding: 0.16em 0.7em;font-size: 0.6em;font-weight: normal;line-height: 1.2em;white-space: nowrap;vertical-align: baseline;background-color: #ec6;border-radius: 1em;fill: rgb(51, 51, 51);color: rgb(51, 51, 51);transition: none 0s ease 0s;transform: none;opacity: 1;">Aufgaben</span></li>
+</ul>
+<pre><code>Title       : ToDo
+tag name(s) : Aufgaben
+Typ         : -
+Text        :
+&lt;!-- copy below here --&gt;
+&lt;$list filter='[!has[draft.of]tag[task]!tag[done]sort[created]]'&gt;
+&lt;$checkbox tag='done'&gt; &lt;$link to={{!!title}}&gt;
+&lt;$view field='created' format='date' template='DDth mmm 0hh:0mm'/&gt; - &lt;$view field='title'/&gt;&lt;br&gt;
+&lt;/$link&gt;
+&lt;/$checkbox&gt;
+&lt;/$list&gt;
+&lt;!-- copy above here --&gt;
+</code></pre>
+
+            </section>
+        
+            <section style="text-align: left; font-size: 25px;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x">
+                <!-- .slide: style="text-align: left; font-size: 25px;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x" -->
+<h2>06 Der Bereich “Aufgaben” C</h2>
+<ul>
+<li>Tiddler 03 “Erledigt”</li>
+</ul>
+<pre><code>Title       : Erledigt
+tag name(s) : Aufgaben
+Tag         : -
+Text        :
+&lt;!-- copy below here --&gt;
+&lt;$list filter='[!has[draft.of]tag[task]tag[done]sort[created]]'&gt;
+&lt;$checkbox tag='done'&gt; ~~&lt;$link to={{!!title}}&gt;&lt;$view field='created' format='date' template='DDth mmm 0hh:0mm'/&gt; - &lt;$view field='title'/&gt;&lt;/$link&gt;~~&lt;/$checkbox&gt;&lt;br&gt;
+&lt;/$list&gt;
+&lt;!-- copy above here --&gt;
+</code></pre>
+
+            </section>
+        
+            <section style="text-align: left;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x">
+                <!-- .slide: style="text-align: left;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x" -->
+<h2>06 Arbeiten mit “Aufgaben” D</h2>
+<ul>
+<li>
+<p>Um eine neue Aufgabe hinzuzufügen, erzeuge einfach einen neuen Tiddler und weise ihm den Tag <span style="tab-size: 4;text-rendering: optimizeLegibility;word-wrap: break-word;display: inline-block;padding: 0.16em 0.7em;font-size: 0.6em;font-weight: normal;line-height: 1.2em;white-space: nowrap;vertical-align: baseline;background-color: #ec6;border-radius: 1em;fill: rgb(51, 51, 51);color: rgb(51, 51, 51);transition: none 0s ease 0s;transform: none;opacity: 1;">task</span> zu</p>
+</li>
+<li>
+<p>Beobachte dabei die Bereiche “Todo” und “Erledigt” wenn du die Checkboxen benutzt.</p>
+</li>
+</ul>
+
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+        <section style="text-align: left; font-size: 35px;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x">
+            
+            <!-- .slide: style="text-align: left; font-size: 35px;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x" -->
+<h2>07 Der Bereich “Journal”</h2>
+<ul>
+<li>Erstellen des Bereichs “Journal” mit Tag: <span style="tab-size: 4;text-rendering: optimizeLegibility;word-wrap: break-word;display: inline-block;padding: 0.16em 0.7em;font-size: 0.6em;font-weight: normal;line-height: 1.2em;white-space: nowrap;vertical-align: baseline;background-color: #ec6;border-radius: 1em;fill: rgb(51, 51, 51);color: rgb(51, 51, 51);transition: none 0s ease 0s;transform: none;opacity: 1;">Inhalt</span></li>
+</ul>
+<pre><code>Titel       : Journal
+Neuer Tag   : Inhalt
+Typ         : -
+Text        :
+</code></pre>
+<ul>
+<li>Nun wird beim Erstellen eines neuen Tiddlers vom Typ “Journal” automatisch ein Tiddler mit dem aktuellen Datum und dem Tag <span style="tab-size: 4;text-rendering: optimizeLegibility;word-wrap: break-word;display: inline-block;padding: 0.16em 0.7em;font-size: 0.6em;font-weight: normal;line-height: 1.2em;white-space: nowrap;vertical-align: baseline;background-color: #ec6;border-radius: 1em;fill: rgb(51, 51, 51);color: rgb(51, 51, 51);transition: none 0s ease 0s;transform: none;opacity: 1;">Journal</span> erzeugt, in den wir unser “Tages-Journal” schreiben können. - Demo</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section style="text-align: left; font-size: 30px;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x">
+            
+            <!-- .slide: style="text-align: left; font-size: 30px;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x" -->
+<h2>08 Umgang mit Bildern</h2>
+<ul>
+<li>Bilder können ganz einfach per Drag &amp; Drop zum Wiki hinzugefügt werden.</li>
+<li>Sie sollten ihren Bildern immer einen Tag hinzufügen, z.B. <span style="tab-size: 4;text-rendering: optimizeLegibility;word-wrap: break-word;display: inline-block;padding: 0.16em 0.7em;font-size: 0.6em;font-weight: normal;line-height: 1.2em;white-space: nowrap;vertical-align: baseline;background-color: #ec6;border-radius: 1em;fill: rgb(51, 51, 51);color: rgb(51, 51, 51);transition: none 0s ease 0s;transform: none;opacity: 1;">image</span> und den Namen ggf. anpassen.</li>
+<li>“Bild-Tiddler” können mit folgendem Syntax in Tiddler eingefügt werden:</li>
+</ul>
+<pre><code>[img[Motovun Jack.jpg]]
+[img[https://tiddlywiki.com/favicon.ico]]
+[img[An explanatory tooltip|Motovun Jack.jpg]]
+[img width=32 [Motovun Jack.jpg]]
+[img width=32 class=&quot;tc-image&quot; [Motovun Jack.jpg]]
+{{Motovun Jack.jpg}}
+</code></pre>
+<ul>
+<li>Mit dem Markdown-Plugin ist auch der Markdown-Syntax möglich</li>
+<li>Es wird immer der Name des Bild-Tiddlers angegeben</li>
+<li>Der “Transclusion-Syntax” “<code>{{Jack.jpg}}</code>” erlaubt keine Zusatzparameter - Demo</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+    <section>
+        <section style="text-align: left;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x">
+            <!-- .slide: style="text-align: left;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x" -->
+<h2>09 Der Bereich “SysTools”</h2>
+<ul>
+<li>“SysTools” Tiddler im Bereich “Inhalt” mit dem Tag <span style="tab-size: 4;text-rendering: optimizeLegibility;word-wrap: break-word;display: inline-block;padding: 0.16em 0.7em;font-size: 0.6em;font-weight: normal;line-height: 1.2em;white-space: nowrap;vertical-align: baseline;background-color: #ec6;border-radius: 1em;fill: rgb(51, 51, 51);color: rgb(51, 51, 51);transition: none 0s ease 0s;transform: none;opacity: 1;">Inhalt</span></li>
+</ul>
+<pre><code>Titel : SysTools
+Tag   : Inhalt
+Text  :
+&lt;!-- copy below here --&gt;
+&lt;$list filter='[!has[draft.of]tag[SysTools]sort[title]]'&gt;
+&lt;$link to={{!!title}}&gt;
+&lt;$view field='title'/&gt;&lt;br&gt;
+&lt;/$link&gt;
+&lt;/$list&gt;
+&lt;!-- copy above here --&gt;
+</code></pre>
+
+            </section>
+        
+            <section style="text-align: left; font-size: 30px;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x">
+                <!-- .slide: style="text-align: left; font-size: 30px;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x" -->
+<h2>09a “* BILDER zeige Systembilder”</h2>
+<ul>
+<li>“* BILDER zeige Systembilder” Tiddler mit dem Tag <span style="tab-size: 4;text-rendering: optimizeLegibility;word-wrap: break-word;display: inline-block;padding: 0.16em 0.7em;font-size: 0.6em;font-weight: normal;line-height: 1.2em;white-space: nowrap;vertical-align: baseline;background-color: #ec6;border-radius: 1em;fill: rgb(51, 51, 51);color: rgb(51, 51, 51);transition: none 0s ease 0s;transform: none;opacity: 1;">SysTools</span></li>
+</ul>
+<pre><code>Titel : * BILDER zeige Systembilder
+Tag   : SysTools
+Typ   : -
+Text  :
+&lt;!-- copy below here --&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;th&gt;Schatten-Tiddler Name&lt;/th&gt;
+&lt;th&gt;gerendertes Bild&lt;/th&gt;
+&lt;/tr&gt;
+&lt;$list filter=&quot;[all[shadows]sort[title]prefix[$:/core/ui/Buttons/]]&quot; variable=info&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;$link to=&lt;&lt;info&gt;&gt;&gt;&lt;/$link&gt;&lt;/td&gt;
+&lt;td&gt;&lt;$transclude tiddler=&lt;&lt;info&gt;&gt;/&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/$list&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+&lt;tr&gt;
+&lt;th&gt;Schatten-Tiddler Name&lt;/th&gt;
+&lt;th&gt;Gerendertes Bild&lt;/th&gt;
+&lt;/tr&gt;
+&lt;$list filter=&quot;[all[shadows]sort[title]prefix[$:/core/images/]]&quot; variable=info&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;$link to=&lt;&lt;info&gt;&gt;&gt;&lt;/$link&gt;&lt;/td&gt;
+&lt;td&gt;&lt;$transclude tiddler=&lt;&lt;info&gt;&gt;/&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/$list&gt;
+&lt;/table&gt;
+&lt;!-- copy above here --&gt;
+</code></pre>
+
+            </section>
+        
+            <section style="text-align: left; font-size: 30px;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x">
+                <!-- .slide: style="text-align: left; font-size: 30px;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x" -->
+<h2>09b “* BILDER zeige importierte Bilder”</h2>
+<ul>
+<li>“* BILDER zeige importierte Bilder” Tiddler mit dem Tag <span style="tab-size: 4;text-rendering: optimizeLegibility;word-wrap: break-word;display: inline-block;padding: 0.16em 0.7em;font-size: 0.6em;font-weight: normal;line-height: 1.2em;white-space: nowrap;vertical-align: baseline;background-color: #ec6;border-radius: 1em;fill: rgb(51, 51, 51);color: rgb(51, 51, 51);transition: none 0s ease 0s;transform: none;opacity: 1;">SysTools</span></li>
+</ul>
+<pre><code>Title       : * BILDER zeige importierte Bilder
+tag name(s) : SysTools
+Typ   : -
+Text        :
+&lt;!-- copy below here --&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;th&gt;Tiddler Name&lt;/th&gt;
+&lt;th&gt;Image rendered&lt;/th&gt;
+&lt;/tr&gt;
+&lt;$list filter=&quot;[!has[draft.of]tag[image]sort[created]]&quot; variable=info&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;$link to=&lt;&lt;info&gt;&gt;&gt;&lt;/$link&gt;&lt;/td&gt;
+&lt;td&gt;&lt;$transclude tiddler=&lt;&lt;info&gt;&gt;/&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/$list&gt;
+&lt;/table&gt;
+&lt;!-- copy above here --&gt;
+</code></pre>
+
+            </section>
+        
+            <section style="text-align: left;font-size: 30px;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x">
+                <!-- .slide: style="text-align: left;font-size: 30px;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x" -->
+<h2>09c “* TIDDLER ohne Verschlagwortung”</h2>
+<ul>
+<li>“* TIDDLER ohne Verschlagwortung” Tiddler mit dem Tag <span style="tab-size: 4;text-rendering: optimizeLegibility;word-wrap: break-word;display: inline-block;padding: 0.16em 0.7em;font-size: 0.6em;font-weight: normal;line-height: 1.2em;white-space: nowrap;vertical-align: baseline;background-color: #ec6;border-radius: 1em;fill: rgb(51, 51, 51);color: rgb(51, 51, 51);transition: none 0s ease 0s;transform: none;opacity: 1;">SysTools</span></li>
+</ul>
+<pre><code>Title       : * TIDDLER ohne Verschlagwortung
+tag name(s) : SysTools
+Typ   : -
+Text        :
+&lt;!-- copy below here --&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;th&gt;Tiddlers without Tags&lt;/th&gt;
+&lt;/tr&gt;
+&lt;$list  filter=&quot;[untagged[]!prefix[$:]]&quot; variable=info&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;$link to=&lt;&lt;info&gt;&gt;&gt;&lt;/$link&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/$list&gt;
+&lt;/table&gt;
+&lt;!-- copy above here --&gt;
+</code></pre>
+
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+        <section style="text-align: left;font-size: 35px;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x">
+            
+            <!-- .slide: style="text-align: left;font-size: 35px;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x" -->
+<h2>10 Der Bereich “Dokumentationen”</h2>
+<ul>
+<li>Wir erstellen einen neuen Tiddler “Dokumentationen” mit dem Tag <span style="tab-size: 4;text-rendering: optimizeLegibility;word-wrap: break-word;display: inline-block;padding: 0.16em 0.7em;font-size: 0.6em;font-weight: normal;line-height: 1.2em;white-space: nowrap;vertical-align: baseline;background-color: #ec6;border-radius: 1em;fill: rgb(51, 51, 51);color: rgb(51, 51, 51);transition: none 0s ease 0s;transform: none;opacity: 1;">Inhalt</span></li>
+</ul>
+<pre><code>Title       : Dokumentationen
+tag name(s) : Inhalt
+Typ         : -
+Text        :
+</code></pre>
+<p>Alle zukünftigen Tiddler denen wir den Tag <span style="tab-size: 4;text-rendering: optimizeLegibility;word-wrap: break-word;display: inline-block;padding: 0.16em 0.7em;font-size: 0.6em;font-weight: normal;line-height: 1.2em;white-space: nowrap;vertical-align: baseline;background-color: #ec6;border-radius: 1em;fill: rgb(51, 51, 51);color: rgb(51, 51, 51);transition: none 0s ease 0s;transform: none;opacity: 1;">Dokumentationen</span> zuweisen erscheinen unter “Dokumentationen”.</p>
+
+            </section>
+    
+
+
+
+    
+        <section style="text-align: left;font-size: 30px" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x">
+            
+            <!-- .slide: style="text-align: left;font-size: 30px" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x" -->
+<h2>11+12  Farbige Stempel + Markdown-Tabellen-Stempel</h2>
+<ul>
+<li>Man kann in den TiddlyWiki-Editor eigene Stempel integrieren</li>
+<li>Es sind <code>/prefix</code> und <code>/suffix</code> Stempel möglich</li>
+<li>Zwecks Übersichtlichkeit sollte auch den Stempeln ein Tag zugwiesen werden, z.B. <span style="tab-size: 4;text-rendering: optimizeLegibility;word-wrap: break-word;display: inline-block;padding: 0.16em 0.7em;font-size: 0.6em;font-weight: normal;line-height: 1.2em;white-space: nowrap;vertical-align: baseline;background-color: #ec6;border-radius: 1em;fill: rgb(51, 51, 51);color: rgb(51, 51, 51);transition: none 0s ease 0s;transform: none;opacity: 1;">STEMPEL</span></li>
+<li>In den Unterlagen befindet sich die Datei <code>stempel.json</code> mit allen im Demo benutzten Stempeln</li>
+<li><a href="https://github.com/boschkundendienst/linux-cafe-april-2022.git">https://github.com/boschkundendienst/linux-cafe-april-2022.git</a></li>
+<li>Demo</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section style="text-align: left;font-size: 35px;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x">
+            
+            <!-- .slide: style="text-align: left;font-size: 35px;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x" -->
+<h2>13  Eine Auswahl von Tiddlern exportieren</h2>
+<ul>
+<li>
+<p>Mit dem Werkzeug “Tools → Erweiterte Suche” lässt sich sehr schnell eine Auswahl an Tiddlern exportieren</p>
+</li>
+<li>
+<p>Am besten mit einem “Filter” arbeiten, z.B. <code>[tag[STEMPEL]]</code></p>
+</li>
+<li>
+<p>Mit dem kleinen Export-Icon <svg width="22pt" color="white" height="22pt" viewBox="0 0 128 128"><path fill="#fff" fill-rule="evenodd" d="M8.003 128H119.993a7.984 7.984 0 005.664-2.349v.007A7.975 7.975 0 00128 120V56c0-4.418-3.59-8-8-8-4.418 0-8 3.58-8 8v56H16V56c0-4.418-3.59-8-8-8-4.418 0-8 3.58-8 8v64c0 4.418 3.59 8 8 8h.003zm48.62-100.689l-8.965 8.966c-3.125 3.125-8.195 3.13-11.319.005-3.118-3.118-3.122-8.192.005-11.319L58.962 2.346A7.986 7.986 0 0164.625 0l-.006.002c2.05-.001 4.102.78 5.666 2.344l22.618 22.617c3.124 3.125 3.129 8.195.005 11.319-3.118 3.118-8.192 3.122-11.319-.005l-8.965-8.966v61.256c0 4.411-3.582 8-8 8-4.41 0-8-3.582-8-8V27.311z"></path></svg> können dann alle gefilterten Tiddler auf einmal in eine <code>.json</code>-Datei exportiert werden</p>
+</li>
+<li>
+<p>Demo</p>
+</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section style="text-align: left;font-size: 35px;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x">
+            
+            <!-- .slide: style="text-align: left;font-size: 35px;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x" -->
+<h2>14  Daten in Tiddlern</h2>
+<p>Es gibt 2 Standad-Formate:</p>
+<ul>
+<li>Wörterbuch-Tiddler (Dictionary Tiddler)</li>
+</ul>
+<pre><code>okt:31
+nov:30
+dez:31
+</code></pre>
+<ul>
+<li>JSON-Tiddler</li>
+</ul>
+<pre><code>{&quot;okt&quot;:31,&quot;nov&quot;:30,&quot;dez&quot;:31}
+</code></pre>
+<ul>
+<li>Auslesen mit Transklusion, z.B.</li>
+</ul>
+<pre><code>{Tiddlername##okt}} → 31
+{Tiddlername##nov}} → 30
+{Tiddlername##dez}} → 31
+</code></pre>
+<ul>
+<li>Demo</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section style="text-align: left; font-size: 30px;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x">
+            
+            <!-- .slide: style="text-align: left; font-size: 30px;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x" -->
+<h2>15 Die Startseite</h2>
+<p>TiddlyWiki kann automatisch ein Inhaltsverzeichnis (TOC) generieren</p>
+<ul>
+<li>Erstelle folgenden Tiddler mit dem Namen “Startseite”</li>
+</ul>
+<pre><code>Title: Startseite
+Tag: -
+Typ: -
+
+&lt;!-- copy below--&gt;
+&lt;div class=&quot;tc-table-of-contents&quot;&gt;
+&lt;&lt;toc-expandable &quot;Inhalt&quot; &quot;sort[title]&quot;&gt;&gt;
+&lt;/div&gt;
+&lt;!-- copy above--&gt;
+</code></pre>
+<ul>
+<li>
+<p>Dieser Tiddler zeigt automatisch alle mit dem Tag “Inhalt” versehenen Tiddler an.</p>
+</li>
+<li>
+<p>Diese “Startseite” kannst Du nun auch in den TiddlyWiki-Grundeinstellungen als “Standard-Tiddler” festlegen</p>
+</li>
+<li>
+<p>Demo</p>
+</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section style="text-align: left; font-size: 30px;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x">
+            
+            <!-- .slide: style="text-align: left; font-size: 30px;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x" -->
+<h2>16 Tutorial in “Play with Docker” ausprobieren</h2>
+<p>Für dieses Tutorial wurde eigens ein Github Repo geschaffen. Es enthält alles was man benötigt um ein TiddlyWiki beim Dienst <a href="https://labs.play-with-docker.com/">Play with Docker</a> laufen zu lassen (4h Limit).</p>
+<p>Klone dazu einfach das Repo und arbeite im enthaltenen TiddlyWiki <font color="yellow">(presentation/files/linux-cafe-04-2022.html)</font> einfach den Punkt 16 ab</p>
+<p>Demo</p>
+
+            </section>
+    
+
+
+
+    
+        <section style="text-align: left; font-size: 30px;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x">
+            
+            <!-- .slide: style="text-align: left; font-size: 30px;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x" -->
+<h2>17 Weiterführende Informationen</h2>
+<p><a href="https://tiddlywiki.com/">TiddlyWiki Homepage</a></p>
+<p><a href="https://tiddlywiki.com/upgrade.html">TiddlyWiki Upgrader</a></p>
+<p><a href="https://tiddlywiki.com/static/Deutsch%2520(Deutschland)%2520Edition.html">Deutsche Version von Tiddlywiki herunterladen</a></p>
+<p><a href="https://tiddlywiki.com/#A%20Gentle%20Guide%20to%20TiddlyWiki">A Gentle Guide to TiddlyWiki</a></p>
+<p><a href="http://tw5magick.tiddlyspot.com/">TW5 Magick - TiddlyWiki Tricks</a></p>
+<p><a href="https://tobibeer.github.io/tb5/#Hiding%20The%20Sidebar%20On%20Startup">Die Seitenleiste beim Start automatisch ausblenden</a></p>
+<p><a href="https://www.youtube.com/channel/UCCYN_nzlUKKMiTj5rerv2lQ">Videos von Francis Meetze</a></p>
+
+            </section>
+    
+
+
+
+    
+        <section style="text-align: left;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x">
+            
+            <!-- .slide: style="text-align: left;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x" -->
+<h1>The End</h1>
+<div style="tab-size: 4;text-rendering: optimizeLegibility;line-height: 20px;word-wrap: break-word;color: #333333;fill: #333333;box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);position: relative;margin-bottom: 28px;background-color: #ffffff;border: 1px solid #ffffff;padding: 28px 42px 42px 42px;border-radius: 2px;width: 100%;transition: none 0s ease 0s;opacity: 1;"><br><br><br>&#060;tiddlywiki&#062;The End&#060;/tiddlywiki&#062;<br><br><br></div>
+            </section>
+    
+
+
+
+    
+        <section style="text-align: left;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x">
+            
+            <!-- .slide: style="text-align: left;" data-background-image="img/puzzle2.jpg" data-background-size="960x 700x" -->
+<h1>Q &amp; A</h1>
+<div style="tab-size: 4;text-rendering: optimizeLegibility;line-height: 20px;word-wrap: break-word;color: #333333;fill: #333333;box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);position: relative;margin-bottom: 28px;background-color: #ffffff;border: 1px solid #ffffff;padding: 28px 42px 42px 42px;border-radius: 2px;width: 100%;transition: none 0s ease 0s;opacity: 1;"><br><br><br>&#060;tiddlywiki&#062;Fragerunde&#060;/tiddlywiki&#062;<br><br><br></div>
+            </section>
+    
+
+
+    </div>
+
+
+  </div>
+
+  	
+	<script src="libs/reveal.js/4.1.3/reveal.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/zoom/zoom.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/notes/notes.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/search/search.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/markdown/markdown.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/highlight/highlight.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/menu/menu.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/math/math.js"></script>
+
+	<script src="libs/reveal.js/4.1.3/plugin/fullscreen/plugin.js"></script>
+  
+  	<script src="libs/reveal.js/4.1.3/plugin/animate/plugin.js"></script>
+  	<script src="libs/reveal.js/4.1.3/plugin/animate/svg.min.js"></script>
+  
+  	<script src="libs/reveal.js/4.1.3/plugin/anything/plugin.js"></script>
+	  <script src="libs/reveal.js/4.1.3/plugin/anything/Chart.min.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/anything/d3/d3.v3.min.js"></script>				
+	<script src="libs/reveal.js/4.1.3/plugin/anything/d3.patch.js"></script>			
+	<script src="libs/reveal.js/4.1.3/plugin/anything/d3/queue.v1.min.js"></script>		
+	<script src="libs/reveal.js/4.1.3/plugin/anything/d3/topojson.v1.min.js"></script>		
+	<script src="libs/reveal.js/4.1.3/plugin/anything/function-plot.js"></script>
+
+ <!--	<script src="libs/reveal.js/4.1.3/plugin/audio-slideshow/plugin.js"></script>  -->
+<!--	<script src="libs/reveal.js/4.1.3/plugin/audio-slideshow/recorder.js"></script>-->
+<!--	<script src="libs/reveal.js/4.1.3/plugin/audio-slideshow/RecordRTC.js"></script>-->
+
+<script src="libs/reveal.js/4.1.3/plugin/chalkboard/plugin.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/customcontrols/plugin.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/embed-tweet/plugin.js"></script>
+
+	<script src="libs/reveal.js/4.1.3/plugin/chart/chart.min.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/chart/plugin.js"></script>
+
+  <script>
+
+		const printPlugins = [
+			RevealNotes, 
+			RevealHighlight,
+			RevealMath,
+			RevealAnimate,
+			RevealChalkboard, 
+			RevealEmbedTweet,
+			RevealChart,
+		];
+
+		const plugins =  [...printPlugins,
+		RevealZoom, 
+		RevealSearch, 
+				RevealMarkdown, 
+				RevealMenu, 
+				RevealFullscreen,
+				RevealAnything,
+				//RevealAudioSlideshow,
+				//RevealAudioRecorder,
+				RevealCustomControls, 
+				// poll
+				// question
+				// seminar
+				 ]
+
+
+		// Also available as an ES module, see:
+		// https://revealjs.com/initialization/
+		Reveal.initialize({
+			controls: true,
+			controlsTutorial: true,
+			controlsLayout: 'bottom-right',
+			controlsBackArrows: 'faded',
+			progress: true,
+			slideNumber: true,
+			//#showSlideNumber "all" "print" "speaker"
+			hash: true,//#  hash: false,
+			//# respondToHashChanges: true,
+			//# history: false,
+			keyboard: true,
+			//#keyboardCondition: null,
+			overview: true,
+			center: true,
+			touch: true,
+			loop: false,
+			rtl: false,
+			//#navigationMode: 'default', linear grid
+			shuffle: false,
+			fragments: true,
+			fragmentInURL: false,
+			embedded: false,
+			help: true,
+			//#pause: true
+			showNotes: false,
+			autoPlayMedia: false, // TODO fix this to a nullable value
+			//#preloadIframes: null. true false
+			//#autoAnimate: true
+			//#autoAnimateMatcher: null,
+			//#autoAnimateEasing: 'ease',
+			//autoAnimateDuration: 1.0,
+			//#autoAnimateUnmatched: true
+			//#autoAnimateStyles: []
+			autoSlide: 0, // TODO fix this to a falseable value
+			autoSlideStoppable: true,
+			autoSlideMethod: '0',
+			defaultTiming: 120,
+			mouseWheel: false,
+			//#previewLinks: false
+			//#postMessage: true,  // TODO : this can cause issues with the vscode api ???
+			//#postMessageEvents: false,
+			//#focusBodyOnPageVisibilityChange: true,
+			transition: 'zoom',
+			transitionSpeed: 'default',
+			backgroundTransition: 'fade',
+			//#pdfMaxPagesPerSlide: Number.POSITIVE_INFINITY,
+			//#pdfSeparateFragments: true,
+			//#pdfPageHeightOffset: -1,
+			viewDistance: 3,
+			//#mobileViewDistance: 2,
+			display: 'block',
+			//#hideInactiveCursor: true,
+			//#hideCursorTime: 5000
+
+			// Parallax Background
+			parallaxBackgroundImage: '',
+			parallaxBackgroundSize: '',
+			parallaxBackgroundHorizontal: 0,
+			parallaxBackgroundVertical: 0,
+			
+			//Presentation Size
+			width: 960,
+			height: 700,
+			margin: 0.04,
+			minScale: 0.2,
+			maxScale: 2,
+			disableLayout: false,
+
+			audio: {
+				prefix: 'audio/', 	// audio files are stored in the "audio" folder
+				suffix: '.ogg',		// audio files have the ".ogg" ending
+				textToSpeechURL: null,  // the URL to the text to speech converter
+				defaultNotes: false, 	// use slide notes as default for the text to speech converter
+				defaultText: false, 	// use slide text as default for the text to speech converter
+				advance: 0, 		// advance to next slide after given time in milliseconds after audio has played, use negative value to not advance
+				autoplay: false,	// automatically start slideshow
+				defaultDuration: 5,	// default duration in seconds if no audio is available
+				defaultAudios: true,	// try to play audios with names such as audio/1.2.ogg
+				playerOpacity: 0.05,	// opacity value of audio player if unfocused
+				playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', // style used for container of audio controls
+				startAtFragment: false, // when moving to a slide, start at the current fragment or at the start of the slide
+			},
+			
+			chalkboard: { // font-awesome.min.css must be available
+					//src: "chalkboard/chalkboard.json",
+					storage: "chalkboard-demo",
+				},
+			
+			customcontrols: {
+					controls: [
+      						{
+						  id: 'toggle-overview',
+						  title: 'Toggle overview (O)',
+						  icon: '<i class="fa fa-th"></i>',
+						  action: 'Reveal.toggleOverview();'
+						}
+						,
+						{ icon: '<i class="fa fa-pen-square"></i>',
+						  title: 'Toggle chalkboard (B)',
+						  action: 'RevealChalkboard.toggleChalkboard();'
+						},
+						{ icon: '<i class="fa fa-pen"></i>',
+						  title: 'Toggle notes canvas (C)',
+						  action: 'RevealChalkboard.toggleNotesCanvas();'
+						}
+				]
+			},
+			chart: {
+					defaults: { 
+						color: 'lightgray', // color of labels
+						scale: { 
+							beginAtZero: true, 
+							ticks: { stepSize: 1 },
+							grid: { color: "lightgray" } , // color of grid lines
+						},
+					},
+					line: { borderColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ], "borderDash": [ [5,10], [0,0] ] }, 
+					bar: { backgroundColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ]}, 
+					pie: { backgroundColor: [ ["rgba(0,0,0,.8)" , "rgba(220,20,20,.8)", "rgba(20,220,20,.8)", "rgba(220,220,20,.8)", "rgba(20,20,220,.8)"] ]},
+					radar: { borderColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ]}, 
+			},
+			math: {
+				mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+				config: 'TeX-AMS_HTML-full',
+				// pass other options into `MathJax.Hub.Config()`
+				TeX: { Macros: { RR: "{\\bf R}" } }
+				},
+				anything: [ 
+				{
+		className: "plot",
+		defaults: {width:500, height: 500, grid:true},
+		initialize: (function(container, options){ options.target = "#"+container.id; functionPlot(options) })
+	 },
+	 {
+		className: "chart",  
+		initialize: (function(container, options){ container.chart = new Chart(container.getContext("2d"), options);  })
+	 },
+	 {
+		className: "anything",
+		initialize: (function(container, options){ if (options && options.initialize) { options.initialize(container)} })
+	 },
+					],
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: (window.location.search.match(/print-pdf/gi) ? printPlugins : plugins ) 
+		});
+			
+
+
+	    // Change chalkboard theme : 
+		function changeTheme(input) {
+			var config = {};
+			config.theme = input.value;
+			Reveal.getPlugin("RevealChalkboard").configure(config);
+			input.blur();
+		}
+
+		// // Handle the message inside the webview
+        // window.addEventListener('message', event => {
+
+        //     const message = event.data; // The JSON data our extension sent
+
+        //     switch (message.command) {
+        //         case 'refactor':
+        //             Reveal.toggleHelp();
+        //     }
+        // });
+
+		if (window.location.search.match(/print-pdf-now/gi)) {
+      		setTimeout(() => {
+				window.print();
+			  }, 2500);
+			
+    }
+		
+
+	</script>
+
+</body>
+
+</html>
