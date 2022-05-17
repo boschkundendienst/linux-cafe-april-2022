@@ -1,0 +1,134 @@
+[
+  {
+    "title": "1 WARNING STAMP (yellow)",
+    "created": "20220316131546254",
+    "modified": "20220324173421438",
+    "tags": "$:/tags/TextEditor/Snippet STAMP",
+    "type": "text/vnd.tiddlywiki",
+    "bag": "default",
+    "caption": "1 &#128065; WARNING STAMP (yellow)",
+    "revision": "1"
+  },
+  {
+    "created": "20220316123939018",
+    "text": "<div style=\"display: flex; align-items:center; width: 75%; opacity: .7; padding: 5px; border: 2px solid Gold; margin: 0; background-color: #fcf8e3; color: black; border-radius: 25px;\"><p style=\"font-size: 110%\">&#128065;&nbsp;&nbsp;",
+    "title": "1 WARNING STAMP (yellow)/prefix",
+    "modified": "20220517081008642",
+    "tags": "STAMP",
+    "type": "text/vnd.tiddlywiki",
+    "bag": "default",
+    "revision": "1"
+  },
+  {
+    "created": "20220316125826681",
+    "text": "</p></div>",
+    "title": "1 WARNING STAMP (yellow)/suffix",
+    "modified": "20220517081007419",
+    "tags": "STAMP",
+    "type": "text/vnd.tiddlywiki",
+    "bag": "default",
+    "revision": "1"
+  },
+  {
+    "title": "2 DANGER STAMP (red)",
+    "created": "20220316131546254",
+    "modified": "20220324173520927",
+    "tags": "$:/tags/TextEditor/Snippet STAMP",
+    "type": "text/vnd.tiddlywiki",
+    "bag": "default",
+    "caption": "2 &#9888; DANGER STAMP (red)",
+    "revision": "1"
+  },
+  {
+    "created": "20220316123939018",
+    "text": "<div style=\"display: flex; align-items:center; width: 75%; opacity: .7; padding: 5px; border: 2px solid Red; margin: 0; background-color: #f2dede; color: black; border-radius: 25px;\"><p style=\"font-size: 110%\">&#9888;&nbsp;&nbsp;",
+    "title": "2 DANGER STAMP (red)/prefix",
+    "modified": "20220517081101831",
+    "tags": "STAMP",
+    "type": "text/vnd.tiddlywiki",
+    "bag": "default",
+    "revision": "1"
+  },
+  {
+    "title": "2 DANGER STAMP (red)/suffix",
+    "created": "20220316125826681",
+    "modified": "20220322142733372",
+    "tags": "STAMP",
+    "type": "text/vnd.tiddlywiki",
+    "text": "</p></div>",
+    "bag": "default",
+    "revision": "1"
+  },
+  {
+    "title": "3 SUCCESS STAMP (green)",
+    "created": "20220316131546254",
+    "modified": "20220324173613335",
+    "tags": "$:/tags/TextEditor/Snippet STAMP",
+    "type": "text/vnd.tiddlywiki",
+    "bag": "default",
+    "caption": "3 &#10003; SUCCESS STAMP (green)",
+    "revision": "1"
+  },
+  {
+    "created": "20220316123939018",
+    "text": "<div style=\"display: flex; align-items:center; width: 75%; opacity: .7; padding: 5px; border: 2px solid Green; margin: 0; background-color: #dff0d8; color: black; border-radius: 25px;\"><p style=\"font-size: 110%\">&#10003;&nbsp;&nbsp;",
+    "title": "3 SUCCESS STAMP (green)/prefix",
+    "modified": "20220517081116651",
+    "tags": "STAMP",
+    "type": "text/vnd.tiddlywiki",
+    "bag": "default",
+    "revision": "1"
+  },
+  {
+    "title": "3 SUCCESS STAMP (green)/suffix",
+    "created": "20220316125826681",
+    "modified": "20220322142745901",
+    "tags": "STAMP",
+    "type": "text/vnd.tiddlywiki",
+    "text": "</p></div>",
+    "bag": "default",
+    "revision": "1"
+  },
+  {
+    "created": "20220316131546254",
+    "text": "",
+    "title": "4 INFO STAMP (blue)",
+    "modified": "20220402194514764",
+    "tags": "$:/tags/TextEditor/Snippet STAMP",
+    "type": "text/vnd.tiddlywiki",
+    "bag": "default",
+    "caption": "4 &#8505; INFO STAMP (blue)",
+    "revision": "2"
+  },
+  {
+    "created": "20220316123939018",
+    "text": "<div style=\"display: flex; align-items:center; width: 75%; opacity: .7; padding: 5px; border: 2px solid #1eb0f8; margin: 0; background-color: #d9edf7; color: black; border-radius: 25px;\"><p style=\"font-size: 110%\">&#8505;&nbsp;&nbsp;",
+    "title": "4 INFO STAMP (blue)/prefix",
+    "modified": "20220517081134523",
+    "tags": "STAMP",
+    "type": "text/vnd.tiddlywiki",
+    "bag": "default",
+    "revision": "2"
+  },
+  {
+    "title": "4 INFO STAMP (blue)/suffix",
+    "created": "20220316125826681",
+    "modified": "20220322142707269",
+    "tags": "STAMP",
+    "type": "text/vnd.tiddlywiki",
+    "text": "</p></div>",
+    "bag": "default",
+    "revision": "1"
+  },
+  {
+    "title": "5 MARKDOWN Table with 5 columns, 4 lines, header and footer",
+    "text": "| |Alpha |Beta |Gamma |Delta |\n|:-|:-:|:-:|:-:|:-:|\n|Beta | | | | |\n|Gamma | | | | |\n|Delta | | | | |\n| |a|b|c|d|",
+    "type": "text/x-markdown",
+    "created": "20220316160148135",
+    "modified": "20220325120323181",
+    "tags": "$:/tags/TextEditor/Snippet STAMP",
+    "bag": "default",
+    "caption": "5 MARKDOWN Table with 5 columns, 4 lines, header and footer",
+    "revision": "1"
+  }
+]
